@@ -1,0 +1,13 @@
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\bin\Debug\netcoreapp3.1\ToyRobot2.exe
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\bin\Debug\netcoreapp3.1\ToyRobot2.deps.json
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\bin\Debug\netcoreapp3.1\ToyRobot2.runtimeconfig.json
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\bin\Debug\netcoreapp3.1\ToyRobot2.runtimeconfig.dev.json
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\bin\Debug\netcoreapp3.1\ToyRobot2.dll
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\bin\Debug\netcoreapp3.1\ToyRobot2.pdb
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\obj\Debug\netcoreapp3.1\ToyRobot2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\obj\Debug\netcoreapp3.1\ToyRobot2.AssemblyInfoInputs.cache
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\obj\Debug\netcoreapp3.1\ToyRobot2.AssemblyInfo.cs
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\obj\Debug\netcoreapp3.1\ToyRobot2.csproj.CoreCompileInputs.cache
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\obj\Debug\netcoreapp3.1\ToyRobot2.dll
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\obj\Debug\netcoreapp3.1\ToyRobot2.pdb
+C:\Users\sanng\source\repos\ToyRobotChallenge\FirstIteration\ToyRobot1\ToyRobot1\obj\Debug\netcoreapp3.1\ToyRobot2.genruntimeconfig.cache
