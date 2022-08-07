@@ -1,0 +1,14 @@
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\bin\Debug\netcoreapp3.1\ToyRobot5.exe
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\bin\Debug\netcoreapp3.1\ToyRobot5.deps.json
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\bin\Debug\netcoreapp3.1\ToyRobot5.runtimeconfig.json
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\bin\Debug\netcoreapp3.1\ToyRobot5.runtimeconfig.dev.json
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\bin\Debug\netcoreapp3.1\ToyRobot5.dll
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\bin\Debug\netcoreapp3.1\ToyRobot5.pdb
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\obj\Debug\netcoreapp3.1\ToyRobot5.csproj.AssemblyReference.cache
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\obj\Debug\netcoreapp3.1\ToyRobot5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\obj\Debug\netcoreapp3.1\ToyRobot5.AssemblyInfoInputs.cache
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\obj\Debug\netcoreapp3.1\ToyRobot5.AssemblyInfo.cs
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\obj\Debug\netcoreapp3.1\ToyRobot5.csproj.CoreCompileInputs.cache
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\obj\Debug\netcoreapp3.1\ToyRobot5.dll
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\obj\Debug\netcoreapp3.1\ToyRobot5.pdb
+C:\Users\sanng\source\repos\ConsoleApp1\FifthIteration\ToyRobot5\ToyRobot5\obj\Debug\netcoreapp3.1\ToyRobot5.genruntimeconfig.cache
