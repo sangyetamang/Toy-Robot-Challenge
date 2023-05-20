@@ -62,6 +62,7 @@ namespace ToyRobot5
 
         static void Main(string[] args)
         {
+            // TEST 1
             try
             {
                 Console.WriteLine("\nTest A: PLACE 0,0,NORTH, MOVE, REPORT");
@@ -73,11 +74,11 @@ namespace ToyRobot5
                             "REPORT"
                         };
                 RunRobotSimulation(robot1, commands1);
-                int[] positions = { 0, 1 };
-                Direction expectedDirection = (Direction)Enum.Parse(typeof(Direction), "NORTH");
-                if (CheckRobotPosition(positions, expectedDirection, robot1) == true)
+                int[] expectedPosition1 = { 0, 1 };
+                Direction expectedDirection1 = (Direction)Enum.Parse(typeof(Direction), "NORTH");
+                if (CheckRobotPosition(expectedPosition1 , expectedDirection1, robot1) == true)
                 {
-                    Console.WriteLine(" :: PASS:: ");// + robot1.GetReport());
+                    Console.WriteLine(" :: PASS:: ");
                 }
                 else
                 {
@@ -88,10 +89,9 @@ namespace ToyRobot5
             {
                 Console.WriteLine(" :: FAIL: ") ;
                 Console.WriteLine(exception.ToString());
-                //result = result + "-";
             }
 
-
+            // TEST 2
             try
             {
                 Console.WriteLine("\nTest B: PLACE 1,3,SOUTH, LEFT, REPORT");
@@ -103,9 +103,9 @@ namespace ToyRobot5
                             "REPORT"
                         };
                 RunRobotSimulation(robot2, commands2);
-                int[] positions2 = { 1, 3 };
+                int[] expectedPosition2 = { 1, 3 };
                 Direction expectedDirection2 = (Direction)Enum.Parse(typeof(Direction), "EAST");
-                if (CheckRobotPosition(positions2, expectedDirection2, robot2))
+                if (CheckRobotPosition(expectedPosition2, expectedDirection2, robot2))
                 {
                     Console.WriteLine(" :: PASS:: " + robot2.GetReport());
                 }
@@ -120,28 +120,25 @@ namespace ToyRobot5
                 Console.WriteLine(exception.ToString());
             }
 
+            // TEST 3
             try
             {
                 Console.WriteLine("\nTest C: PLACE 2,2,SOUTH, MOVE, MOVE, REPORT");
                 Robot robot3 = new Robot();
                 string[] commands3 =
                         {
-                            "PLACE 2,3,SOUTH",
+                            "PLACE 2,2,SOUTH",
                             "MOVE",
                             "MOVE",
                             "REPORT"
                         };
-                Robot testRobot = new Robot(2, 2, Direction.SOUTH);
-                testRobot.Move();
-                testRobot.Move();
-                Console.WriteLine("Test REport " + testRobot.GetReport());
                 RunRobotSimulation(robot3, commands3);
-                int[] positions3 = { 2, 0};
-                Direction expectedDirection3 = (Direction)Enum.Parse(typeof(Direction), "NORTH");
+                int[] expectedPosition3 = { 2, 0};
+                Direction expectedDirection3 = (Direction)Enum.Parse(typeof(Direction), "SOUTH");
                 
-                if (CheckRobotPosition(positions3, expectedDirection3, robot3))
+                if (CheckRobotPosition(expectedPosition3, expectedDirection3, robot3))
                 {
-                    Console.WriteLine(" :: PASS:: " + robot3.GetReport());
+                    Console.WriteLine(" :: PASS:: ");
                 }
                 else
                 {
@@ -150,9 +147,71 @@ namespace ToyRobot5
             }
             catch (Exception exception)
             {
-                Console.WriteLine(" :: FAIL: "); //+ list.ToString()) ;
+                Console.WriteLine(" :: FAIL: ");
                 Console.WriteLine(exception.ToString());
-                //result = result + "-";
+            }
+
+            // test 4
+            try
+            {
+                Console.WriteLine("\nTest D: PLACE 2,2,SOUTH, LEFT, LEFT, REPORT");
+                Robot robot4 = new Robot();
+                string[] commands3 =
+                        {
+                            "PLACE 2,2,SOUTH",
+                            "LEFT",
+                            "LEFT",
+                            "MOVE",
+                            "REPORT"
+                        };
+                RunRobotSimulation(robot4, commands3);
+                int[] expectedPosition4 = { 2, 3};
+                Direction expectedDirection4 = (Direction)Enum.Parse(typeof(Direction), "NORTH");
+
+                if (CheckRobotPosition(expectedPosition4, expectedDirection4, robot4))
+                {
+                    Console.WriteLine(" :: PASS:: ");
+                }
+                else
+                {
+                    Console.WriteLine(" :: FAIL ::");
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(" :: FAIL: ");
+                Console.WriteLine(exception.ToString());
+            }
+
+            // test 5
+            try
+            {
+                Console.WriteLine("\nTest D: PLACE 5,0,WEST, MOVE, RIGHT, REPORT");
+                Robot robot5 = new Robot();
+                string[] commands3 =
+                        {
+                            "PLACE 0,5,WEST",
+                            "MOVE",
+                            "RIGHT",
+                            "REPORT"
+                        };
+                RunRobotSimulation(robot5, commands3);
+                int[] expectedPosition5 = { 0, 5};
+                Direction expectedDirection5 = (Direction)Enum.Parse(typeof(Direction), "NORTH");
+
+                if (CheckRobotPosition(expectedPosition5, expectedDirection5, robot5))
+                {
+                    Console.WriteLine(" :: PASS:: ");
+                }
+                else
+                {
+                    Console.WriteLine(" :: FAIL ::");
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(" :: FAIL: ");
+                Console.WriteLine(exception.ToString());
             }
         }
     }
