@@ -16,10 +16,10 @@ namespace ToyRobot5
      */
     public enum Direction
     {
-        North,
-        East,
-        South,
-        West
+        NORTH,
+        EAST,
+        SOUTH,
+        WEST
     }
     public class Robot
     {
@@ -28,16 +28,16 @@ namespace ToyRobot5
         private int y;
         private SquareBoard myBoard = new SquareBoard(5);
 
-        //constructor w/o params
+        //constructor
         public Robot() { }
-        //constructor with params
-        public Robot(int x, int y, Direction direction)
+      
+        // constructor with params
+        public Robot(int X, int Y, Direction NewDirection)
         {
-            this.direction = direction;
-            this.x = x;
-            this.y = y;
+            this.x = X;
+            this.y = Y;
+            this.direction = NewDirection;
         }
-
         public SquareBoard MyBoard { get { return myBoard; } }
 
         public int X { get { return x; } }
@@ -59,6 +59,16 @@ namespace ToyRobot5
                 return location;
         }
 
+        public void Place(int newX, int newY, string facing)
+        {
+            //Console.WriteLine(Enum.IsDefined(typeof(Direction), facing));
+            if (MyBoard.IsWithinBound(newX) && MyBoard.IsWithinBound(newY) && Enum.IsDefined(typeof(Direction), facing))
+            {
+                x = newX;
+                y = newY;
+                direction = (Direction)Enum.Parse(typeof(Direction), facing);
+            }
+        }
         //move the toy robot one unit forward in the direction it is currently facing
         public void Move()
         {
@@ -66,16 +76,16 @@ namespace ToyRobot5
 
             switch (direction)
             {
-                case Direction.North:
+                case Direction.NORTH:
                     y++;
                     break;
-                case Direction.South:
+                case Direction.SOUTH:
                     y--;
                     break;
-                case Direction.East:
+                case Direction.EAST:
                     x++;
                     break;
-                case Direction.West:
+                case Direction.WEST:
                     x--;
                     break;
             }

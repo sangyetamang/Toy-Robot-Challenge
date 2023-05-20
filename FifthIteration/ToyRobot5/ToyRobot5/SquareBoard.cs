@@ -22,7 +22,7 @@ namespace ToyRobot5
             }
         }
 
-        //check if x is withing the boundary of the board
+        //check if x is within the boundary of the board
         public bool IsWithinBound(int x)
         {
             return x <= length && x >= 0;
